@@ -10,19 +10,20 @@ module.exports = function (env) {
     PORT: env.PORT,
 
     // Reference: https://docs.railway.app/develop/variables#railway-provided-variables
-    PUBLIC_URL: `https://${env.RAILWAY_STATIC_URL}`,
+    // PUBLIC_URL: `https://${env.RAILWAY_STATIC_URL}`,
+    PUBLIC_URL: `http://0.0.0.0:${env.PORT}`,
 
     // Database variables from Railway PostgreSQL Plugin
     // Reference: https://docs.railway.app/plugins/postgresql
-    DB_CLIENT: 'pg',
+    DB_CLIENT: "pg",
     DB_HOST: env.PGHOST,
     DB_PORT: env.PGPORT,
     DB_DATABASE: env.PGDATABASE,
     DB_USER: env.PGUSER,
     DB_PASSWORD: env.PGPASSWORD,
 
-    STORAGE_LOCATIONS: 's3',
-    STORAGE_S3_DRIVER: 's3',
+    STORAGE_LOCATIONS: "s3",
+    STORAGE_S3_DRIVER: "s3",
     STORAGE_S3_KEY: env.STORAGE_S3_KEY,
     STORAGE_S3_SECRET: env.STORAGE_S3_SECRET,
     STORAGE_S3_REGION: env.STORAGE_S3_REGION,
@@ -32,5 +33,5 @@ module.exports = function (env) {
     CORS_ORIGIN: env.CORS_ORIGIN,
     CORS_ALLOWED_HEADERS: env.CORS_ALLOWED_HEADERS,
     CORS_METHODS: env.CORS_METHODS,
-  }
-}
+  };
+};
