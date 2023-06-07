@@ -1,0 +1,19 @@
+{
+  "name": "mantle-cms",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "directus": "^10.2.1",
+    "sqlite3": "^5.1.2"
+  },
+  "engines": {
+    "node": "18.16.0"
+  }
+}
