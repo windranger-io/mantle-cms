@@ -10,8 +10,8 @@ RUN npm ci --only=production
 
 # RUN chown -Rf node:node /app
 
-USER node
-
 COPY --chown=node:node . ./
+
+USER node
 
 CMD ["npm", "run", "start"]
