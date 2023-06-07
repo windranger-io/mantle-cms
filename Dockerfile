@@ -8,10 +8,6 @@ COPY package*.json ./
 
 RUN npm ci --only=production
 
-# RUN chown -Rf node:node /app
-
-COPY --chown=node:node . ./
-
-USER node
+COPY . ./
 
 CMD ["npm", "run", "start"]
