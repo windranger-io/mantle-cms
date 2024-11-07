@@ -34,5 +34,6 @@ module.exports = function (env) {
     CORS_ORIGIN: env.CORS_ORIGIN,
     CORS_ALLOWED_HEADERS: env.CORS_ALLOWED_HEADERS,
     CORS_METHODS: env.CORS_METHODS,
+    SESSION_COOKIE_TTL: env.SESSION_COOKIE_TTL
   };
 };
