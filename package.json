@@ -11,10 +11,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "directus": "^10.2.1",
+    "directus": "^11.6.0",
     "sqlite3": "^5.1.2"
   },
   "engines": {
-    "node": "18.16.0"
+    "node": ">=22.0.0"
   }
 }
